@@ -1,120 +1,158 @@
-cascading style sheets (Folha de estilo em cascata,em português)
- -ESTRUTURA DO CSS
+/*ESTILO GERAIS*/
+body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
 
- --SELETOR - EXEMPLO = SELECIONAR UM ELEMENTO
- --PROPRIEDADE - EXEMPLO = COR DE FUNDO
- --VALOR - EXEMPLO = AMARELHO
- --DECLARAÇÃO DE UMA REGRA - EXEMPLO = 
+figcaption{
+    display: none;
+}
+img{
+    max-width: 1200px;
+}
 
- /*ESTILOS GERAIS */
+/*ESTILO GERAIS*/
 
- body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   list-style: nome;
-   text-decoration: nome;
-   outline: nome;
+/*ESTILO DO CABEÇALHO*/
+.cabecalho{
+    background-color: black;
+    padding: 16px 0;
+}
 
- }
+/*ESTILO DO LOGO*/
+.cabecalho .cabecalho_logo{}
+   
+.cabecalho .cabecalho_logo img{
+    text-align: center;}
+}
 
+/*ESTILO DO MENU*/
+.cabecalho .cabecalho_menu,.cabecalho_menuconfiguracao{
+    display: none;
+}
+
+.cabecalho .cabecalho_menu ul{}
+.cabecalho .cabecalho_menu li{}
+.cabecalho .cabecalho_menu a{}
+
+/*ESTILO AREA DE CONFIGURAÇÃO*/
+.cabecalho .cabecalho_menuconfiguracao{}
+.cabecalho .cabecalho_menuconfiguracao ul{}
+.cabecalho .cabecalho_menuconfiguracao li{}
+.cabecalho .cabecalho_menuconfiguracao a{}
+
+/*ESTILO CONTEÚDO PRINCIPAL*/
+main{
+    background-color: silver;
+}
+
+/*ESTILO SEÇÃO DESTAQUE*/
+.SecaoDestaque{
+    background-image: url(../images/8.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0 22px;
   
- figcaption{
-   display: none;   
- }
- img{
-   max-width: 1200px;
- }
- /*ESTILOS GERAIS */
- body{
-    ./*ESTILO DO CABEÇALHO*/
-    .cabeçalho{
-      background-color: #141414;
-      padding: 16px 0;
-      display: none;
-    }
+}
+.SecaoDestaque_ImagemDestaque{
+    display: none;
+}
+.SecaoDestaque_ImagemDestaque img{    
+element.style {
+    width: 200px;
+}
 
+.SecaoDestaque_DestaqueDiscrição{
+    color: inherit;
+}
+.SecaoDestaque_DestaqueDiscrição h1{}
+.SecaoDestaque_DestaqueDiscrição p{
+    margin: 10px 0;
+    font-size: x-large; 
+}
 
-
-    /*ESTILO DO LOGO*/
-    .cabeçalho . cabeçalho logo{
-      text-align: center;
-    }
-
-    .cabeçalho . cabeçalho logo img{
-            
-    /*ESTILO DO MENU*/
-    .cabeçalho . cabeçalho menu,.cabeçalho . CABEÇALHO_menuconfiguração{  display: none;}  
-
-    .cabeçalho . cabeçalho menu ul{}
-    .cabeçalho . cabeçalho menu li{}
-    .cabeçalho . cabeçalho menu a{}
-    
-    ./*ESTILO ÁREA DE CONFIGURAÇÃO*/    
-    .cabeçalho . CABEÇALHO_menuconfiguração ul{}
-    .cabeçalho . CABEÇALHO_menuconfiguração li{}
-    .cabeçalho . CABEÇALHO_menuconfiguração a{}
-
-    /*ESTILO CONTEÚDO PRINCIPAL*/
-    main{}
-
-    /*ESTILO SEÇÃO DESTAQUE*/
-    .seçãoDestaque{
-      ackground-position: center;
-      background-repeat: no-repeat;
-      background-image: url(../images/02.jpg);
-      background-size: cover;
-      padding: 30px 0 22px;
-  }
-    }
-    .seçãoDestaque  . seçãoDestaque_ImagemDestaque img{
-      {max-width: 100%
-    }
-    .seçãoDestaque  .SeçãoDestaque_DescriçãoDestaque {
-      color: white;
-    } 
-    .seçãoDestaque  .SeçãoDestaque_DescriçãoNavegação img{}      
-    .seçãoDestaque  .SeçãoDestaque_DescriçãoNavegação h1 img{
-      width: 70%;
-      max-width: 60%;
-    }
-    .seçãoDestaque  .SeçãoDestaque_DescriçãoNavegação p{
-      font-size: 1rem;
-      margin: 10px 0;
-    }
-
-    .seçãoDestaque  .SeçãoDestaque_NavegaçãoDestaque a{}
-    .seçãoDestaque  .SeçãoDestaque_NavegaçãoDestaque {
-      font-size: 0.9rem;
-    background-color: wheat;
-    color: black;
-    padding: 7px 15px;
-    border-radius: 3px;
+.SecaoDestaque_SecaoDestaque_DestaqueNavegção{}
+.SecaoDestaque_SecaoDestaque_DestaqueNavegção a{
+    font-size: 0.9rem;
+    background-color: coral;
+    color: papayawhip;
+    padding: 7px;
     display: inline-block;
-    }
-    
+}
 
-     /*ESTILO SEÇÃO FILMES*/
-     .seçãodefilmes{}
-     .seçãodefilmes h2{}
-     .seçãodefilmes .Lista De Filmes{}
-     .seçãodefilmes .Lista De Filmes ul{}
-     .seçãodefilmes .Lista De Filmes li{}
-     .seçãodefilmes .Lista De Filmes li figure{}
-     .seçãodefilmes .Lista De Filmes li img{}
-     
-      /*ESTILO RODAPÉ*/
-      .Rodapé{}
-      .Rodapé.midiasSociai{}
-      .Rodapé.midiasSociai ul{}
-      .Rodapé.midiasSociai ul li{}
-      .Rodapé.midiasSociai ul li a{}
 
-      .Rodapé.Rodapé_menuNavegação{}
-      .Rodapé.Rodapé_menuNavegação ul{}
-      .Rodapé.Rodapé_menuNavegação ul li{}
-      .Rodapé.Rodapé_menuNavegação ul li a{}
-      
-      .Rodapé.RODAPÉ_LinkCódigo{}
-      .Rodapé P{}
- }
+/*ESTILO SEÇÃO FILMES*/
+.secaofilmes{
+    padding: 0 20px;
+    color: black;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.secaofilmes h2{
+    font-size: 1.1rem;
+}
+.secaofilmes_SecaoFilmes_ListaFilmes ul{
+    display: flex;
+    flex-wrap: nowrap
+    overflow: scroll;
+}
+.secaofilmes_SecaoFilmes_ListaFilmes li{
+    margin-right: 10px;
+}
+.secaofilmes_SecaoFilmes_ListaFilmes li figure{}
+.secaofilmes_SecaoFilmes_ListaFilmes li img{}
+
+/*ESTILO DO RODAPÉ*/
+.rodapé{
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.Rodapé_Midiasociais{
+    max-width: 20px;
+    max-height: 20px;
+}
+.Rodapé_Midiasociais ul{
+    display: inline-block;
+    max-width: 20px;
+    /*max-height: 30px;*/
+}
+.Rodapé_Midiasociais ul li{
+    width: 20px;
+    display: inline-block;
+    /*max-height: 20px;*/
+}
+.Rodapé_Midiasociais ul a{
+    max-width: 20px;
+    max-height: 20px;
+}
+.Rodapé_Midiasociais li img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.Rodapé_MenuDenavegação{
+    margin: 16px 0;
+}
+.Rodapé_MenuDenavegação ul{}
+.Rodapé_MenuDenavegação ul li{}
+.Rodapé_MenuDenavegação ul li a{}
+
+.Rodapé_linkcodigo{}
+.Rodapé_ p{}
+
+
+
+
+
+
+
+
+
+
+
+
